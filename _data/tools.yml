@@ -1,0 +1,13 @@
+title: Projects
+
+icon_location: icons
+
+article:
+- {title: 'Lorem ipsum dolor-1', id: 'page-1', icon: 'compas.svg', ani: 'fadeInLeft', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non'}
+- {title: 'Lorem ipsum dolor-2', id: 'page-2', icon: 'loop.svg', ani: 'fadeInLeft', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non'}
+- {title: 'Lorem ipsum dolor-3', id: 'page-3', icon: 'clipboard.svg', ani: 'fadeInRight', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non'}
+- {title: 'Lorem ipsum dolor-4', id: 'page-4', class: 'right', icon: 'mail.svg', ani: 'fadeInRight', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non'}
+- {title: 'Lorem ipsum dolor-5', id: 'page-5', icon: 'map.svg', ani: 'fadeInLeft', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non'}
+- {title: 'Lorem ipsum dolor-6', id: 'page-6', icon: 'paper-bag.svg', ani: 'fadeInLeft', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non'}
+- {title: 'Lorem ipsum dolor-7', id: 'page-7', icon: 'pencils.svg', ani: 'fadeInRight', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non'}
+- {title: 'Lorem ipsum dolor-8', id: 'page-8', class: 'right', icon: 'retina.svg', ani: 'fadeInRight', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non'}
