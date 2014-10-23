@@ -1,0 +1,330 @@
+$mobile: new-breakpoint(max-width 538px 12);
+$laptop: new-breakpoint(max-width 900px 12);
+$large: new-breakpoint(max-width 1200px 12);
+
+/**
+ * Site header
+ */
+.site-header {
+    //border-top: 5px solid $grey-color-dark;
+    //border-bottom: 1px solid $grey-color-light;
+    min-height: 56px;
+    color: $header-color;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    width: 75px;
+
+    &,
+    &:visited {
+        color: $header-color;
+    }
+
+    @include media($laptop) {
+        width: 50px;
+        margin-top: -20px;
+        }
+
+    @include media($mobile) {
+        width: 30px;
+    }
+}
+
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: rgba($header-color, 1);
+        line-height: $base-line-height;
+        padding: 0 5px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        letter-spacing: 5px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+        @include transition ( all 0.3s ease-in-out );
+
+        &:after {
+            content: "";
+            border: solid 1px rgba($header-color, 0.0);
+            display: block;
+        }
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        &:hover {
+            color: rgba($header-color, 1);            
+
+            &:after {
+                content: "";
+                border: solid 1px rgba($header-color, 1);
+                display: block;
+                @include animation( scaleOut 0.2s ease-in );
+            }
+
+        }
+
+        &:active {
+            color: rgba($header-color, 1);
+            //border: solid 1px rgba($header-color, 1);
+            //background: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .active, .mPS2id-clicked {
+            color: rgba($header-color, 1);            
+
+            &:after {
+                content: "";
+                border: solid 1px rgba($header-color, 1);
+                display: block;
+                @include animation( scaleOut 0.2s ease-in );
+            }
+
+        }
+
+    @include media($laptop) {
+        position: absolute;
+        top: 9px;
+        right: 30px;
+        background-color: rgba($accent_color, 1);
+        //border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+        padding: 5px 5px 10px;
+        text-align: center;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+            @include transition ( all 0.3s ease-in-out );
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $header-color;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+            @include animation( scaleOut 0.2s ease-in );
+        }
+
+        .page-link {
+            display: block;
+            padding: 10px 10px;
+        }
+    }
+}
+
+
+.menu-top {
+    @include position(fixed, 0px 0px null 0px);
+    background-color: rgba($accent_color, 0.7);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+
+    img {
+        width: 30px;
+        margin-top: 10px;
+
+        @include media($laptop) {
+            margin: 30px 20px 0;
+        }
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+}
+
+.header-s, .features, .contact {
+    background-repeat: no-repeat;
+    @include position( relative, 0px 0 0 0px );
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    background-color: $accent_color;
+    color: $header-color;
+}
+
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0;
+    position: relative;
+    z-index: 5;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
+.overlay {
+    background: $accent_color;
+    @include position( absolute, 0 0 0 0 );
+    opacity: $opacity;
+    z-index: 1; 
+}
+
+
+.element {
+    background: #fff;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    color: $text-color;
+    padding: 20px 20px 0;
+
+    .lema{
+        color: $text-color;
+    }
+}
+
+.box {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: none;
+    
+    .close {
+        //margin: 20px 20px 0;
+    }
+
+    .page-load {
+        //padding: 20px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.tools-infor {
+    @include row(  );
+}
+
+.tools-img {
+    @include span-columns( 6 );
+    
+    @include media( $laptop ) {
+        @include span-columns( 4 );
+    }
+
+    @include media( $mobile ) {
+        @include span-columns( 12 );
+    }
+}
+
+.tools-content {
+    @include span-columns( 6 );
+
+    @include media( $laptop ) {
+        @include span-columns( 8 );
+    }
+
+    @include media( $mobile ) {
+        @include span-columns( 12 );
+    }
+}

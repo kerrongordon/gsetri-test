@@ -1,0 +1,83 @@
+//////////////////////////////////////////
+              ///contact//
+/////////////////////////////////////////
+
+
+.contact {
+	@include retina-image($contact-bg-img, cover);
+
+	.overlay {
+		opacity: 0.7;
+		background: $contact-bg-color;
+	}
+
+	.content {
+		@include span-columns( 6 );
+		margin-top: 25px;
+		@include transition ( all 0.7s ease-in-out );
+
+		.lema {
+			//color: $header-color;
+		}
+
+		@include media($laptop) {
+			@include span-columns( 6 );
+		}
+
+		@include media($mobile) {
+			@include span-columns( 12 );
+		}
+	}
+
+	.main-form {
+		@include span-columns( 6 );
+		@include transition ( all 0.7s ease-in-out );
+
+		@include media($laptop) {
+			@include span-columns( 6 );
+		}
+
+		@include media($mobile) {
+			@include span-columns( 12 );
+		}
+
+		.cname {
+			@include span-columns( 6 );
+			font-size: 14px;
+
+			@include media($laptop) {
+				@include span-columns( 12 );
+			}
+
+			@include media($mobile) {
+				@include span-columns( 12 );
+			}
+		}
+
+		.cemail {
+			@include span-columns( 6 );
+			margin-right: 0;
+			font-size: 14px;
+
+			@include media($laptop) {
+				@include span-columns( 12 );
+			}
+
+			@include media($mobile) {
+				@include span-columns( 12 );
+			}
+		}
+
+		.form-group {
+
+			label {
+				font-size: 14px;
+			}
+
+			textarea {
+				min-height: 200px;
+				font-size: 14px;
+			}
+		}
+	}
+}

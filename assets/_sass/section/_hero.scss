@@ -1,0 +1,86 @@
+//////////////////////////////////////////
+              ///header-s//
+/////////////////////////////////////////
+
+
+.header-s {
+	@include retina-image($header-bg-img, cover);
+	height: 700px;
+    text-align: center;
+    @include transition ( all 0.3s ease-in-out );
+
+    .overlay {
+    	opacity: 0.3;
+    	background: $header-bg-color;
+    }
+   
+
+    @include media($laptop) {
+		height: 500px;
+	}
+
+	@include media($mobile) {
+		height: 300px;
+	} 
+
+	.site-header {
+		z-index: 999;
+	}
+
+	.header-line {
+		line-height: 30em;
+
+		@include media($laptop) {
+			line-height: 20em;
+		}
+
+		@include media($mobile) {
+			line-height: 10em;
+		}
+	}
+
+	.site-name {
+		vertical-align: middle;
+		display: inline-block;
+		position: relative;
+		z-index: 2;
+
+		h1 {
+			font-family: 'Cinzel Decorative', cursive;
+			font-size: 4rem;
+			padding: 0 50px;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+
+			span {
+
+				&:after {
+					content: "";
+					border: solid 1px $header-color;
+					margin: 0px 5px;
+					box-shadow: 0 0 5px;
+					@include animation( blink 1.0s infinite ease-in );
+				}
+			}
+
+		
+
+		@include media($laptop) {
+			font-size: 2rem;
+		}
+
+		@include media($mobile) {
+			font-size: 1.5rem;
+		}
+
+		}
+	}
+
+	@include media($laptop) {
+		height: 500px;
+	}
+
+	@include media($mobile) {
+		height: 300px;
+	}
+
+}

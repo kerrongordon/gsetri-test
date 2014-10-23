@@ -1,0 +1,54 @@
+//////////////////////////////////////////
+              ///main-work//
+/////////////////////////////////////////
+
+.main-work {
+	@include transition ( all 0.5s ease-in-out );
+
+	.content {
+		@include span-columns( 3 );
+		text-align: center;
+		margin-top: 20px;
+		cursor: pointer;
+		@include transition ( all 0.2s ease-in-out );
+
+		h4 {
+			font-size: 17px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		img {
+			@include size( 100px 100px );
+			margin-top: 20px;
+		}
+
+		@include media($laptop) {
+			@include span-columns( 6 );
+			margin-right: 0; 
+		}
+
+		@include media($mobile) {
+			@include span-columns( 12 );
+		}
+
+		&:hover {
+			box-shadow: 0 0px 0px 1px rgba(0, 0, 0, 0.2), 0 15px 35px 5px rgba(0, 0, 0, 0.3);
+
+			img {
+				@include animation( iconmove 0.5s ease-in );
+			}
+		}
+
+		&:active, &:focus {
+			background: transparent;
+			box-shadow: inset 0 0px 5px rgba(0, 0, 0, 0.3);
+			outline: none;
+		}
+
+	}
+	.right {
+		margin: 20px 0;
+	}
+}
