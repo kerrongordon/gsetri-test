@@ -16,7 +16,7 @@
 	}
 
 	img {
-		border: solid 3px #fff;
+		//border: solid 3px #fff;
 	}
 	
 	.full-w {
@@ -35,6 +35,7 @@
 	.content {
 		@include span-columns( 4 );
 		@include transition ( all 0.7s ease-in-out );
+		text-align: center;
 
 		h4 {
 			font-size: 17px;
