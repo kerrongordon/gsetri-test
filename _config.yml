@@ -6,6 +6,9 @@ url: "http://gsetri.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
+exclude: ['thumbnail.png', 'README.md']
+include: ['assets', 'page']
+
 sass:
   sass_dir: assets/_sass
   style: :compressed
