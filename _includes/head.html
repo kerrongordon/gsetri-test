@@ -6,12 +6,6 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
     <meta name="description" content="{{ site.data.settings.description }}">
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,600,400' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <script src="{{ site.baseurl }}/{{ site.javascript_location }}/lib/wow.min.js"></script>
-	<script>
- 		new WOW().init();
-	</script>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">	
 </head>
