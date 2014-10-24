@@ -49,4 +49,30 @@
 });
 })(jQuery);
 
+$(document).ready(function() {
+  var menu = $('#navigation-menu'),
+      menuToggle = $('#js-mobile-menu'),
+      signUp = $('.sign-up'),
+      navLink = $('.nav-link');
+
+  $(menuToggle).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle(function(){
+      if(menu.is(':hidden')) {
+        menu.removeAttr('style');
+      }
+    });
+  });
+
+  $(navLink).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle(function(){
+      if(menu.is(':hidden')) {
+        menu.removeAttr('style');
+      }
+    });
+  });
+
+
+});
 

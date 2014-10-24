@@ -100,34 +100,11 @@ $large: new-breakpoint(max-width 1200px 12);
         }
 
     @include media($laptop) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: rgba($accent_color, 1);
-        //border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-        padding: 5px 5px 10px;
-        text-align: center;
+        
 
         .menu-icon {
             display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-            @include transition ( all 0.3s ease-in-out );
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $header-color;
-                }
-            }
+            margin: 8px 20px;
         }
 
         .trigger {
@@ -137,13 +114,17 @@ $large: new-breakpoint(max-width 1200px 12);
 
         &:hover .trigger {
             display: block;
-            padding-bottom: 5px;
-            @include animation( scaleOut 0.2s ease-in );
+            position: fixed;
+            background: #2b2b2b;
+            width: 200px;
+            top: 56px;
+            right: 0;
+            text-align: center;
         }
 
         .page-link {
             display: block;
-            padding: 10px 10px;
+            padding: 20px;
         }
     }
 }
@@ -151,16 +132,17 @@ $large: new-breakpoint(max-width 1200px 12);
 
 .menu-top {
     @include position(fixed, 0px 0px null 0px);
-    background-color: rgba($accent_color, 0.7);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    background-color: $dark-gray;
+    border-bottom: 1px solid darken($dark-gray, 10);
+    //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     z-index: 999;
 
     img {
         width: 30px;
-        margin-top: 10px;
+        //margin-top: 10px;
 
         @include media($laptop) {
-            margin: 30px 20px 0;
+            //margin: 30px 20px 0;
         }
     }
 
