@@ -4,7 +4,7 @@
 
 
 .site-footer {
-	background: $footer-bg-color;
+	background: $dark-gray;
 
 	.social-media-list {
 		@include span-columns( 3 );
@@ -18,7 +18,7 @@
 			a {
 				text-decoration: none;
 				color: $header-color;
-				opacity: 0.8;
+				opacity: 0.9;
 
 				&:hover {
 					color: $accent_color_secondary;

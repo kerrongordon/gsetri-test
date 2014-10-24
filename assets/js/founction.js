@@ -64,15 +64,19 @@ $(document).ready(function() {
     });
   });
 
-  $(navLink).on('click', function(e) {
-    e.preventDefault();
-    menu.slideToggle(function(){
-      if(menu.is(':hidden')) {
-        menu.removeAttr('style');
-      }
-    });
-  });
 
+
+  if ($(window).width() < 899) {
+
+    $(navLink).on('click', function(e) {
+      e.preventDefault();
+      menu.slideToggle(function(){
+        if(menu.is(':hidden')) {
+          menu.removeAttr('style');
+        }
+      });
+    });
+  }
 
 });
 
