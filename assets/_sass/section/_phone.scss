@@ -1,0 +1,36 @@
+.phone-contact {
+	background: $wet-asphalt;
+	display: none;
+	
+	@include media($laptop) {
+		display: block
+	}
+
+	@include media($mobile) {
+		display: block;
+	}
+
+	.email-btn {
+		@include span-columns( 6 );
+		padding: 30px;
+		background: rgba($peter-river, 0.7);
+
+		&:hover {
+			background: $peter-river;
+		}
+
+		@include media($mobile) {
+			@include span-columns( 12 );
+		}
+	}
+
+	.phone-btn {
+		@include span-columns( 6 );
+		padding: 30px;
+
+		@include media($mobile) {
+			@include span-columns( 12 );
+		}
+	}
+
+}
