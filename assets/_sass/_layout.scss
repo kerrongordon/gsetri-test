@@ -310,3 +310,12 @@ $large: new-breakpoint(max-width 1200px 12);
         @include span-columns( 12 );
     }
 }
+
+.center-text {
+    text-align: center;
+}
+
+.discrip {
+    font-size: 1.1rem;
+    margin-bottom: 5em;
+}

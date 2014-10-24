@@ -5,6 +5,6 @@ backgroundImage: header-bg
 menu: 
 - {title: 'Home', link: '#home'}
 - {title: 'About', link: '#about'}
-- {title: 'Features', link: '#features'}
+- {title: 'Departments', link: '#Departments'}
 - {title: 'Projects', link: '#tools'}
 - {title: 'Contact', link: '#contact'}
