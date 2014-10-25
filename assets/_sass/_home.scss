@@ -74,7 +74,7 @@ button:hover, input[type="submit"]:hover {
 
 section {
 	overflow: hidden;
-	@include transition ( all 0.7s ease-in-out );
+	//@include transition ( all 0.7s ease-in-out );
 }
 
 @include keyframes( blink ) {0% {opacity: 0;} 50% {opacity: 1;} 100% {opacity: 0;}}

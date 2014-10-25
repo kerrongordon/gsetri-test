@@ -4,11 +4,21 @@
 
 
 .header-s {
-	@include retina-image($header-bg-img, cover);
+	//@include retina-image($header-bg-img, cover);
 	height: 700px;
     text-align: center;
     @include transition ( all 0.3s ease-in-out );
     overflow: inherit;
+    position: relative;
+    width: 100%;
+
+    .outimg {
+    	@include position(absolute, 0px 0px 0px 0px);
+      	@include retina-image($header-bg-img, cover);
+      	background-position: center center;
+      	background-repeat: no-repeat;
+      	background-size: cover;
+	}
 
     header.navigation {
     	background-color: transparent;

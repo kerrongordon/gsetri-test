@@ -80,3 +80,12 @@ $(document).ready(function() {
 
 });
 
+$(window).scroll(function() {
+
+  var windowScroll = $(this).scrollTop();
+
+  $('.header-s .outimg').css({
+    'top': '' + windowScroll + 'px'
+  });
+
+});
