@@ -7,18 +7,18 @@
 	//@include retina-image($header-bg-img, cover);
 	height: 700px;
     text-align: center;
-    @include transition ( all 0.3s ease-in-out );
-    overflow: inherit;
+    @include transition ( all 0.3s ease );
+    //overflow: inherit;
     position: relative;
     width: 100%;
 
-    .outimg {
+    .zoomImage {
     	@include position(absolute, 0px 0px 0px 0px);
-      	@include retina-image($header-bg-img, cover);
+      	@include retina-image($header-bg-img, center center);
       	background-position: center center;
       	background-repeat: no-repeat;
       	background-size: cover;
-      	@include transition ( all 0.2s ease );
+      	@include transition ( all 0.3 ease );
 	}
 
     header.navigation {

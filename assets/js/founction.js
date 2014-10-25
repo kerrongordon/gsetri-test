@@ -80,14 +80,41 @@ $(document).ready(function() {
 
 });
 
-$(window).scroll(function() {
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
 
-  var windowScroll = $(this).scrollTop();
+if(isMobile.any()) {
+   
 
-  $('.header-s .outimg').css({
-    'top': '-' + windowScroll + 'px',
-    'right': '-' + windowScroll + 'px',
-    'left': '-' + windowScroll + 'px'
+} else {
+
+  $(window).scroll(function() {
+
+    var windowScroll = $(this).scrollTop();
+
+    $('.header-s .zoomImage').css({
+      'top': '-' + windowScroll + 'px',
+      'right': '-' + windowScroll + 'px',
+      'left': '-' + windowScroll + 'px'
+    });
+
   });
-
-});
+}
