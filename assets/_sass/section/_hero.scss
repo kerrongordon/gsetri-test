@@ -37,7 +37,7 @@
 	}
 
 	@include media($mobile) {
-		height: 300px;
+		height: 400px;
 	} 
 
 	.site-header {
@@ -52,7 +52,7 @@
 		}
 
 		@include media($mobile) {
-			line-height: 10em;
+			line-height: 13em;
 		}
 	}
 
@@ -90,14 +90,6 @@
 		}
 
 		}
-	}
-
-	@include media($laptop) {
-		height: 500px;
-	}
-
-	@include media($mobile) {
-		height: 300px;
 	}
 
 }
