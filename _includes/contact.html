@@ -4,6 +4,8 @@
       <div class="wrapper">
         <h2 class="section-title wow fadeInLeft">{{ site.data.contact.title }}</h2>
 
+        {% include phone.html %}
+
         <form class="main-form wow zoomIn" action="//forms.brace.io/{{ site.data.settings.email }}" method="POST">
  
           <div class="form-group cname">

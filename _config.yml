@@ -7,7 +7,7 @@ url: "http://gsetri.com" # the base hostname & protocol for your site
 markdown: kramdown
 
 exclude: ['thumbnail.png', 'README.md']
-include: ['assets', 'page']
+include: ['page', '.htaccess']
 
 sass:
   sass_dir: assets/_sass

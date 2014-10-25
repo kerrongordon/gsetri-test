@@ -33,6 +33,12 @@
 
 .btn {
 	margin-bottom: 20px;
+	border-bottom: solid 3px rgba($accent_color_secondary, 1);
+	@include transition ( all 0.3 ease );
+
+	&:hover {
+		
+	}
 }
 
 .copyr {
@@ -44,6 +50,22 @@
 
 img {
 	margin-bottom: 20px;
+}
+
+::-webkit-input-placeholder {
+   color: #E0E0E0;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #E0E0E0;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #E0E0E0;  
+}
+
+:-ms-input-placeholder {  
+   color: #E0E0E0;  
 }
 
 

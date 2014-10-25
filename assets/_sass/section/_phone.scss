@@ -1,19 +1,22 @@
 .phone-contact {
-	background: $wet-asphalt;
+	//background: $wet-asphalt;
 	display: none;
 	
 	@include media($laptop) {
-		display: block
+		display: block;
+		margin-bottom: 35px;
 	}
 
 	@include media($mobile) {
 		display: block;
+		margin-bottom: 35px;
 	}
 
 	.email-btn {
 		@include span-columns( 6 );
 		padding: 30px;
 		background: rgba($peter-river, 0.7);
+		border-bottom: solid 3px $peter-river;
 
 		&:hover {
 			background: $peter-river;
@@ -25,6 +28,7 @@
 	}
 
 	.phone-btn {
+		@extend .btn;
 		@include span-columns( 6 );
 		padding: 30px;
 
@@ -34,3 +38,5 @@
 	}
 
 }
+
+
