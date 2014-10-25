@@ -85,7 +85,9 @@ $(window).scroll(function() {
   var windowScroll = $(this).scrollTop();
 
   $('.header-s .outimg').css({
-    'top': '' + windowScroll + 'px'
+    'top': '-' + windowScroll + 'px',
+    'right': '-' + windowScroll + 'px',
+    'left': '-' + windowScroll + 'px'
   });
 
 });
