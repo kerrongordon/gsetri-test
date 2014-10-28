@@ -12,15 +12,6 @@
     position: relative;
     width: 100%;
 
-    .zoomImage {
-    	@include position(absolute, 0px 0px 0px 0px);
-      	@include retina-image($header-bg-img, center center);
-      	background-position: center center;
-      	background-repeat: no-repeat;
-      	background-size: cover;
-      	@include transition ( all 0.3 ease );
-	}
-
     header.navigation {
     	background-color: transparent;
     	border: 1px solid transparent;
@@ -92,4 +83,24 @@
 		}
 	}
 
+}
+
+.zoomImage {
+    @include position(absolute, 0px 0px 0px 0px);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include transition ( all 0.3 ease );
+}
+
+.zoom-1 {
+	@include retina-image($header-bg-img, center center);
+}
+
+.zoom-2 {
+    @include retina-image($post-bg-img, center center);
+}
+
+.zoom-3 {
+    @include retina-image($contact-bg-img, center center);
 }

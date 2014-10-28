@@ -6,7 +6,7 @@ url: "http://gsetri.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
-exclude: ['thumbnail.png', 'README.md', 'assets/js/founction.js', 'assets/js/lib/old' ]
+exclude: ['thumbnail.png', 'README.md', 'assets/js/lib/old' ]
 include: ['page', '.htaccess']
 
 sass:

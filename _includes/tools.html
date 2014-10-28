@@ -14,7 +14,9 @@
           <img src="{{ site.baseurl }}/{{ site.image_location }}/{{ site.data.tools.icon_location }}/{{ article.icon }}">
           <h4>{{ article.title }}</h4>
           <p class="lema">{{ article.content }}</p>
-          <button class="btn"><i class="icon-link"></i> Read More</button>
+          <form action="{{ site.baseurl }}/category/{{ article.link }}">
+          <button class="btn" type="submit"><i class="icon-link"></i> Read More</button>
+          </form>
         </article>
         {% endfor %}
         </div>

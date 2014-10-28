@@ -9,7 +9,6 @@
 		@include span-columns( 3 );
 		text-align: center;
 		margin-top: 20px;
-		cursor: pointer;
 		@include transition ( all 0.2s ease-in-out );
 
 		h4 {
@@ -34,13 +33,16 @@
 		}
 
 		&:hover {
-			box-shadow: 0 0px 0px 1px rgba(0, 0, 0, 0.2), 0 15px 35px 5px rgba(0, 0, 0, 0.3);
+			//box-shadow: 0 0px 0px 1px rgba(0, 0, 0, 0.2), 0 15px 35px 5px rgba(0, 0, 0, 0.3);
 
 			img {
 				@include animation( iconmove 0.5s ease-in );
 			}
+		}
 
-			.btn {
+		.btn {
+			
+			&:hover {
 				background: $accent_color_secondary;
 			}
 		}
