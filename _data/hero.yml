@@ -5,6 +5,7 @@ backgroundImage: header-bg
 menu: 
 - {title: 'Home', link: '#home'}
 - {title: 'About', link: '#about'}
+- {title: 'News', link: 'category/renewable-energy/'}
 - {title: 'Departments', link: '#Departments'}
 - {title: 'Projects', link: '#tools'}
 - {title: 'Contact', link: '#contact'}

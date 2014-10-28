@@ -1,23 +1,19 @@
 ---
 layout: home
+title: Renewable Energy Technology
 ---
 
 
-<section id="header-s" class="header-s">
-  <div class="zoomImage zoom-2"></div>
-  <div class="overlay"></div>
-  {% include header.html %}
-  <span class="header-line"></span>
-
-  <div class="site-name animated fadeInUp">
-    <h1><span>Renewable Energy Technology</span></h1>
-
-</section>
+{% include post.html %}
 
 <div class="page-content">
 <div class="wrapper">
 
 <div class="home">
+
+  <aside class="main-sidebar">
+    {% include main-sidebar.html %}
+  </aside>
 
   <div class="main">
 
@@ -35,12 +31,6 @@ layout: home
   </ul>
 
   </div>
-
-  <aside class="main-sidebar">
-    {% include main-sidebar.html %}
-  </aside>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
 </div>

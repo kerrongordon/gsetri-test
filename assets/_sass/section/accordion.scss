@@ -12,7 +12,16 @@
   background-color: $accordion-menu-background;
   border: $accordion-menu-border;
   margin-bottom: $base-spacing;
-  margin: 0;
+  margin: 0 60px 0 0;
+  font-size: 14px;
+
+  @include media( $laptop ) {
+      margin: 0;
+  }
+
+    @include media( $mobile ) {
+      margin: 0;
+  }
 
   li {
     border-bottom: $accordion-menu-border;
