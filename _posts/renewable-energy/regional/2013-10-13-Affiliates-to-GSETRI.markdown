@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "GSETRI renewable-energy"
-date:   2012-9-13 20:01:59
-category: renewable-energy
+title:  "Affiliates-to-GSETRI renewable-energy"
+date:   2013-10-13 20:01:59
+category: ['renewable-energy', 'regional']
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -5,6 +5,7 @@ url: "http://gsetri.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+permalink: pretty
 
 exclude: ['thumbnail.png', 'README.md', 'assets/js/lib/old' ]
 include: ['page', '.htaccess']
