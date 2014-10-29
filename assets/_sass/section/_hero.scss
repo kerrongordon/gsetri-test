@@ -5,9 +5,9 @@
 
 .header-s {
 	//@include retina-image($header-bg-img, cover);
-	height: 700px;
+	//height: 700px;
     text-align: center;
-    @include transition ( all 0.3s ease );
+    @include transition ( all 0.7s linear );
     //overflow: inherit;
     position: relative;
     width: 100%;
@@ -24,7 +24,7 @@
    
 
     @include media($laptop) {
-		height: 500px;
+		//height: 500px;
 	}
 
 	@include media($mobile) {

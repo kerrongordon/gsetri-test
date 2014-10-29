@@ -1,0 +1,40 @@
+---
+layout: home
+title: Energy Research Product Development and Innovation
+---
+
+
+{% include post.html %}
+
+<div class="page-content">
+<div class="wrapper">
+
+<div class="home">
+
+  <aside class="main-sidebar">
+    {% include main-sidebar.html %}
+  </aside>
+
+  <div class="main">
+
+  <ul class="post-list">
+    {% for energyresearch in site.pages %}
+     {% if energyresearch.type == 'energy-research' %}
+      <li class="wow fadeInUp">
+        <span class="page-meta">{{ energyresearch.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="page-link" href="{{ energyresearch.url | prepend: site.baseurl }}">{{ energyresearch.title }}</a>
+        </h2>
+         <p>{{ energyresearch.meta }}</p>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  </div>
+
+
+</div>
+</div>
+</div>
