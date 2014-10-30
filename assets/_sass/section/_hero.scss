@@ -11,6 +11,9 @@
     //overflow: inherit;
     position: relative;
     width: 100%;
+    
+
+    
 
     header.navigation {
     	background-color: transparent;
@@ -52,6 +55,7 @@
 		display: inline-block;
 		position: relative;
 		z-index: 2;
+		
 
 		h1 {
 			font-family: 'Cinzel Decorative', cursive;
@@ -103,4 +107,16 @@
 
 .zoom-3 {
     @include retina-image($contact-bg-img, center center);
+}
+
+.hero-home {
+	height: 100vh;
+	min-height: 500px;
+
+	.site-name {
+		height: 75vh;
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(center);
+	}
 }

@@ -25,6 +25,7 @@
 });
 
 
+
 $(document).ready(function() {
   var menu = $('#navigation-menu'),
       menuToggle = $('#js-mobile-menu'),
@@ -44,8 +45,7 @@ $(document).ready(function() {
 
   if ($(window).width() < 899) {
 
-    $(navLink).on('click', function(e) {
-      e.preventDefault();
+    $(navLink).on('click', function() {
       menu.slideToggle(function(){
         if(menu.is(':hidden')) {
           menu.removeAttr('style');

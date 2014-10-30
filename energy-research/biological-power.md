@@ -8,7 +8,7 @@ meta: is an energy-generating technology which uses oxygenic photoautotrophic or
 
 ###Biological Power or Biological photovoltaics (BPV) 
 
-![Diagram_of_electron_flow_in_a_biological_photovoltaic_system](/assets/img/page-image/biological-power.jpg)
+![Diagram_of_electron_flow_in_a_biological_photovoltaic_system]({{ site.baseurl }}/assets/img/page-image/biological-power.jpg)
 
 is an energy-generating technology which uses oxygenic photoautotrophic organisms, or fractions thereof, to harvest light energy and produce electrical power. 
 
