@@ -19,6 +19,9 @@
 	img {
 		border: solid 3px #fff;
 		box-shadow: 0 0 2px 1px #222;
+        @include size(200px 200px);
+        @include border-top-radius(50%);
+        @include border-bottom-radius(50%);
 	}
 	
 	.full-w {

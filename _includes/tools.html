@@ -11,7 +11,7 @@
         <div class="elements-box">
         {% for article in site.data.tools.article %}
         <article id="{{ article.id }}" data-title="{{ article.title }}"class="content tools-infor {{ article.class }} wow {{ article.ani }}">
-          <img src="{{ site.baseurl }}/{{ site.image_location }}/{{ site.data.tools.icon_location }}/{{ article.icon }}">
+          <img src="{{ site.baseurl }}/{{ site.image_location }}/{{ site.data.tools.icon_location }}/200/{{ article.icon }}">
           <h4>{{ article.title }}</h4>
           <p class="lema">{{ article.content }}</p>
           <form action="{{ site.baseurl }}/{{ article.link }}">

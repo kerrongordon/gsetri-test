@@ -2,11 +2,11 @@
   <div class="overlay"></div>
   <div class="page-content">
       <div class="wrapper">
-        <h2 class="section-title wow fadeInLeft">{{ site.data.contact.title }}</h2>
+        <h2 class="section-title wow fadeInUp">{{ site.data.contact.title }}</h2>
 
         {% include phone.html %}
 
-        <form class="main-form wow zoomIn" action="//forms.brace.io/{{ site.data.settings.email }}" method="POST">
+        <form class="main-form wow fadeInUp" action="//forms.brace.io/{{ site.data.settings.email }}" method="POST">
  
           <div class="form-group cname">
             <label>Your Name</label>
@@ -26,7 +26,7 @@
             <input type="submit" value="Send Message">
         </form>        
 
-        <article class="content wow fadeInRight">
+        <article class="content wow fadeInUp">
           <h4>{{ site.data.contact.sidebar_title }}</h4>
           <p class="lema">{{ site.data.contact.paragraph-1 }}</p>
 

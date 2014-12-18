@@ -5,58 +5,58 @@ icon_location: icons
 article:
 - {title: 'Renewable Energy Technology - News, Articles',
 	  id: 'page-1',
-	icon: 'bulb11.svg',
-	 ani: 'fadeInLeft',
+	icon: 'renewable-energy-s.svg',
+	 ani: 'fadeInUp',
  content: '',
     link: 'category/renewable-energy'}
 
 - {title: 'Energy Research Product Development and Innovation',
       id: 'page-2',
-    icon: 'connecting7.svg',
-     ani: 'fadeInLeft',
+    icon: 'energy-research-s.svg',
+     ani: 'fadeInUp',
  content: '',
     link: 'energy-research'}
 
 - {title: 'Solar Solution-Commercial and Retail Depo',
       id: 'page-3',
-    icon: 'layers4.svg',
-     ani: 'fadeInRight',
+    icon: 'solar-solution-s.svg',
+     ani: 'fadeInUp',
  content: '',
     link: 'solar-solution'}
 
 - {title: 'Education Programs Demonstration Center',
       id: 'page-4',
    class: 'right',
-    icon: 'bullet4.svg',
-     ani: 'fadeInRight',
+    icon: 'education-s1.svg',
+     ani: 'fadeInUp',
  content: '',
     link: 'education'}
 
 - {title: 'Affiliates to GSETRI',
       id: 'page-5',
-    icon: 'plugin1.svg',
-     ani: 'fadeInLeft',
+    icon: 'affiliates-s1.svg',
+     ani: 'fadeInUp',
  content: '',
     link: 'affiliates'}
 
 - {title: 'RE-Projects at GSETRI',
       id: 'page-6',
-    icon: 'hierarchy4.svg',
-     ani: 'fadeInLeft',
+    icon: 'projects-s.svg',
+     ani: 'fadeInUp',
  content: '',
     link: 'projects'}
 
 - {title: 'GSETRI Promotions and services',
       id: 'page-7',
-    icon: 'open79.svg',
-     ani: 'fadeInRight',
+    icon: 'box-s.svg',
+     ani: 'fadeInUp',
  content: '',
     link: 'promotions'}
 
 - {title: 'Events of GSETRI',
       id: 'page-8',
    class: 'right',
-    icon: 'calendar48.svg',
-     ani: 'fadeInRight',
+    icon: 'calendar-s.svg',
+     ani: 'fadeInUp',
  content: '',
     link: 'events'}

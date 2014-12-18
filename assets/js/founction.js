@@ -56,44 +56,7 @@ $(document).ready(function() {
 
 });
 
-var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
 
-if(isMobile.any()) {
-   
-
-} else {
-
-  $(window).scroll(function() {
-
-    var windowScroll = $(this).scrollTop();
-
-    $('.header-s .zoomImage').css({
-      'top': '-' + windowScroll + 'px',
-      'right': '-' + windowScroll + 'px',
-      'left': '-' + windowScroll + 'px'
-    });
-
-  });
-}
 
 $('.js-accordion-trigger').bind('click', function(e){
   jQuery(this).parent().find('.submenu').slideToggle('fast');  // apply the toggle to the ul

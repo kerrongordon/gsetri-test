@@ -7,6 +7,6 @@ infor: There are three major operational units/ Departments with-in the institut
 discription: The current aim is to commence operations with some of the elements identified below. We have begun as will climb one step at a time until we have achieved a home grown institute matured to lead by example. 
 
 article:
-- {title: 'operations management', img: 'pic/Picture3.jpg', ani: 'fadeInLeft', content: 'Unit for operations management, reception, translation and accommodation, office operations, simulation room, conference room, retail outlet.'}
+- {title: 'operations management', img: 'pic/Picture3.jpg', ani: 'fadeInUp', content: 'Unit for operations management, reception, translation and accommodation, office operations, simulation room, conference room, retail outlet.'}
 - {title: 'Research Laboratories', img: 'pic/Picture6.jpg', ani: 'fadeInUp', content: 'Unit   for  Research Laboratories,  weather data and environmental, info tect, communication and Design room, control units, process rooms,'}
-- {title: 'field study', img: 'pic/Picture1.jpg', ani: 'fadeInRight', content: 'Unit for field study, Work-shop- factory operation for product development hubs, demonstration rooms'}
+- {title: 'field study', img: 'pic/Picture1.jpg', ani: 'fadeInUp', content: 'Unit for field study, Work-shop- factory operation for product development hubs, demonstration rooms'}
